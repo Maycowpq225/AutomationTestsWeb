@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="699f1a50-02d3-465a-aeb1-50dcd7860704" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/genericSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/POs/GalpGovernoSocietarioPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/POs/basePO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/GalpGovernoSocietarioStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/Applitools.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AmazonMusicStep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/genericSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/genericSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/WebDriverConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/WebDriverConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AmazonMusic.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AmazonMusic.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AmazonMusic.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GalpGovernoSocietario.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +66,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../example-selenium-java-junit" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -116,5 +121,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/POs/basePO.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

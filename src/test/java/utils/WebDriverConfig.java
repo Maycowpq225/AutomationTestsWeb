@@ -1,11 +1,11 @@
 package utils;
 
 
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -17,7 +17,7 @@ public class WebDriverConfig {
     public WebDriverWait wait;
 
     public static synchronized WebDriverConfig shared() {
-        if(sharedInstance == null){
+        if (sharedInstance == null) {
             sharedInstance = new WebDriverConfig();
         }
 
@@ -25,22 +25,23 @@ public class WebDriverConfig {
     }
 
     public WebDriverConfig setUpBrowser() {
-        System.setProperty("webdriver.chrome.driver", "../AutomationTestsWeb/src/test/resources/webdrivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:/projetos/AutomationTestsWeb/src/test/resources/webdrivers/chromedriver.exe");
 
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--remote-allow-origins=*");
-            driver = new ChromeDriver(options);
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        this.driver = new ChromeDriver(options);
 
         return this;
     }
 
     public void defaultConfig() {
-        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        driver.manage().window().fullscreen();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        PageFactory.initElements(this.driver, this);
+        this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(15));
+        this.driver.manage().window().fullscreen();
+        this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }
 
     public void closeDriver() {
-        driver.close();
+        this.driver.close();
     }
 }

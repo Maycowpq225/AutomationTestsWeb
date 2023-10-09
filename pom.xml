@@ -16,6 +16,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.applitools</groupId>
+            <artifactId>eyes-selenium-java5</artifactId>
+            <version>5.57.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>6.0.0-RC2</version>
@@ -30,7 +36,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.3.0</version>
+            <version>RELEASE</version>
         </dependency>
 
     </dependencies>
