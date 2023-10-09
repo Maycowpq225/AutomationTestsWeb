@@ -4,6 +4,7 @@ package utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -17,7 +18,9 @@ public class WebDriverConfig {
     public WebDriverConfig setUpBrowser(String browser) {
         System.setProperty("webdriver.chrome.driver", "../AutomationTestsWeb/src/test/resources/webdrivers/chromedriver.exe");
 
-            driver = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--remote-allow-origins=*");
+            driver = new ChromeDriver(options);
 
         return this;
     }

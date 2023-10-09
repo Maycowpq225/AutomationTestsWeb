@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="699f1a50-02d3-465a-aeb1-50dcd7860704" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/webdrivers/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/runner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +65,7 @@
       <recent name="E:\Projeto buscado do git\AutomationTestSelenium\src\test\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projetos\AutomationTestsWeb\src\test\resources\webdrivers" />
       <recent name="E:\Projeto buscado do git\AutomationTestSelenium" />
     </key>
   </component>

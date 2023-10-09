@@ -16,7 +16,7 @@ import utils.WebDriverConfig;
         snippets = CucumberOptions.SnippetType.CAMELCASE, dryRun = false)
 public class runner {
 
-    private static final WebDriverConfig webDriverConfig = new WebDriverConfig();
+    public static WebDriverConfig webDriverConfig = new WebDriverConfig();
 
     @BeforeClass
     public static void config() {
