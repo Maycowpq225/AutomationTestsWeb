@@ -4,6 +4,6 @@
 @prime
 Feature: Amazon Music
 
-  @prime
+  @primeTest
   Scenario: Access prime Music
-    Given test
+    Given that i am on the website "https://www.amazon.com.br/music/prime"

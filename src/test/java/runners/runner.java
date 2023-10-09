@@ -12,19 +12,17 @@ import utils.WebDriverConfig;
         glue = "steps",
         plugin = { "pretty", "json:target/cucumber-reports/CucumberJson.json"},
         monochrome = true,
-        tags = "@prime",
+        tags = "@primeTest",
         snippets = CucumberOptions.SnippetType.CAMELCASE, dryRun = false)
 public class runner {
 
-    public static WebDriverConfig webDriverConfig = new WebDriverConfig();
-
     @BeforeClass
     public static void config() {
-        webDriverConfig.setUpBrowser("chrome").defaultConfig();
+        WebDriverConfig.shared().setUpBrowser().defaultConfig();
     }
 
     @AfterClass
     public static void afterMethod(){
-        webDriverConfig.closeDriver();
+        WebDriverConfig.shared().closeDriver();
     }
 }

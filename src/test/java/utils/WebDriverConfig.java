@@ -12,10 +12,19 @@ import java.time.Duration;
 
 public class WebDriverConfig {
 
+    private static WebDriverConfig sharedInstance;
     public WebDriver driver;
     public WebDriverWait wait;
 
-    public WebDriverConfig setUpBrowser(String browser) {
+    public static synchronized WebDriverConfig shared() {
+        if(sharedInstance == null){
+            sharedInstance = new WebDriverConfig();
+        }
+
+        return sharedInstance;
+    }
+
+    public WebDriverConfig setUpBrowser() {
         System.setProperty("webdriver.chrome.driver", "../AutomationTestsWeb/src/test/resources/webdrivers/chromedriver.exe");
 
             ChromeOptions options = new ChromeOptions();
