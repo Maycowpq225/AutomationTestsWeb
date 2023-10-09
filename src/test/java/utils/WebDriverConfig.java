@@ -15,14 +15,10 @@ public class WebDriverConfig {
     public WebDriverWait wait;
 
     public WebDriverConfig setUpBrowser(String browser) {
-        //System.setProperty("webdriver.gecko.driver", "");
-        System.setProperty("webdriver.chrome.driver", "../automation-java-selenium-cucumber/src/test/resources/webdrivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "../AutomationTestsWeb/src/test/resources/webdrivers/chromedriver.exe");
 
-        if (browser.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
-        } else {
-            driver = new FirefoxDriver();
-        }
+
         return this;
     }
 
